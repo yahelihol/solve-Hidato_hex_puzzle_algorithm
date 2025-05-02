@@ -114,9 +114,8 @@ def hamiltonian_path_util(board, path, visited, pos, found, path_to_draw): # rec
             visited.add(cube)
 
             # Recur to construct the rest of the path
-            if is_remaining_area_connected(board, visited, pos + 1, found):  # <---- Connectivity pruning here
-                if hamiltonian_path_util(board, path, visited, pos + 1, found, path_to_draw):
-                    return True
+            if hamiltonian_path_util(board, path, visited, pos + 1, found, path_to_draw):
+                return True
 
             # If adding vertex v doesn't lead to a solution, remove it (backtracking)
             path[pos] = -1
