@@ -2,7 +2,7 @@
 import time
 from collections import deque, defaultdict
 
-from numpy.matlib import empty
+
 
 def generate_hex_board(size):
     board = {}

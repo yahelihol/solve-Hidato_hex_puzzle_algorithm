@@ -8,7 +8,7 @@ global HEX_SIZE
 from collections import deque, defaultdict
 
 # Constants
-SIZE = 6
+SIZE = 5
 WIDTH, HEIGHT = 800, 800
 HEX_SIZE = 40
 MARGIN = 10
